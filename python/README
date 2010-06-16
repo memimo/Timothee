@@ -1,0 +1,14 @@
+The project is the re-implentation of the "Masquelier, T., T. Serre, S. Thorpe and T. Poggio. Learning complex cell invariance from natural videos: A plausibility proof, CBCL Paper #269/AI Technical Report #2007-060, Massachusetts Institute of Technology, Cambridge, MA, December, 2007." paper which the orignal code is implemented by Timothee Masquelier in Matlab
+You can refer to matlab folder for the original code.
+
+The code is re-implented in python by Mehdi Mirza, Nicolas Pinto which is located python folder
+
+
+## Configuration ##
+
+
+## Testing ##
+
+The version 0 is the clone implention of the orignal code in matlab, and the test module is designed to compare it's output with the matlab output on the same dataset and onder same random number condition.
+If the params['test_mode'] in config.py set to True, the code will run in test mode and appropiate temporary directories for test output files should be created and be set in config.py
+test_module.py will check existence of mat files and npy files for test case, if there is none it will compute them and compare the equivalenty of the results

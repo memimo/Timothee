@@ -81,6 +81,5 @@ def run_all():
     l_c1()
 
 
-#if __name__ == "__main__":
-
-#    run_all()
+if __name__ == "__main__":
+    run_all()

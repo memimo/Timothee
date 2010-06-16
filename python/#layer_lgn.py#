@@ -19,7 +19,7 @@ def compute_layer():
                               1)/2.0)) * params['s']['sub_sampling'] * \
                               params['on_off']['sub_sampling']
             on_off_map = compute_map(params['dog_filter'], paths['image'],
-                         params['crop_pos'], internal_pos,
+                        params['crop_pos'], internal_pos,
                          params['s']['rf_size'],
                          params['on_off']['sub_sampling'], params['zoom'])
             save(paths['map'] + 'onoff.' + str(i_ind) + '.' + str(j_ind) + \
@@ -46,7 +46,6 @@ def compute_map(in_filter, img_path, crop_pos, internal_pos, map_size,
 
     for i_ind in range(num_img):
         img = sp.misc.imread(image_files[i_ind])
-        img = img.mean(2) if img.ndim == 3 else img
         if zoom < 1:
             img = shrink(img, zoom)
 

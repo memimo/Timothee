@@ -30,8 +30,7 @@ params = {}
 params['zoom'] = 1
 params['crop_pos'] = []
 params['image_size'] = [320, 240]
-#params['grid_size'] = [int(params['image_size'][0] / 25), int(params['image_size'][1] / 25  + 1)]
-params['grid_size'] = [8,8]
+params['grid_size'] = [(params['image_size'][0] / 25), int(params['image_size'][1] / 25  + 1)]
 for ii_ind in range(1, params['grid_size'][1]):
     for jj_ind in range(1,  params['grid_size'][0]):
         params['crop_pos'].append([ii_ind * 25, jj_ind * 25])
