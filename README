@@ -1,0 +1,4 @@
+Re-implementation of following paper:
+Masquelier, T., T. Serre, S. Thorpe and T. Poggio. Learning complex cell invariance from natural videos: A plausibility proof, CBCL Paper #269/AI Technical Report #2007-060, Massachusetts Institute of Technology, Cambridge, MA, December, 2007
+
+from oringnal code in Matlab to Python
